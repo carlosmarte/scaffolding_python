@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "helloworld-002"
+version = "0.1.0"
+description = "Simple Hello World with Poetry"
+authors = []
+readme = "README.md"
+packages = [{include = "helloworld_002"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+hello = "helloworld_002.hello:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
